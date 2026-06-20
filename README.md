@@ -91,8 +91,9 @@ The software engineering enhancement focused on improving maintainability, modul
 
 ### Artifacts
 
-* [Enhanced Source Code](https://github.com/adamjwhaley/ePortfolio/blob/main/Software%20Design%20and%20Engineering%20Main%20Enhancement)
-* [Software Engineering Narrative]
+* [Software Design and Engineering Main Enhancement](https://github.com/adamjwhaley/ePortfolio/blob/main/Software%20Design%20and%20Engineering%20Main%20Enhancement)
+* [Software Design and Engineering CRUD Module Enhancement](https://github.com/adamjwhaley/ePortfolio/blob/main/Software%20Design%20and%20Engineering%20CRUD%20Module%20Enhancement)
+* [Software Design and Engineering Narrative]
 
 ---
 

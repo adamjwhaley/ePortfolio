@@ -167,32 +167,6 @@ The database enhancement expanded the MongoDB integration by introducing advance
 
 ---
 
-# Repository Structure
-
-```text
-/
-│
-├── README.md
-├── CodeReview/
-│   └── CodeReviewVideo
-│
-├── OriginalArtifact/
-│
-├── SoftwareEngineering/
-│   ├── EnhancedCode
-│   └── Narrative
-│
-├── AlgorithmsAndDataStructures/
-│   ├── EnhancedCode
-│   └── Narrative
-│
-├── Databases/
-│   ├── EnhancedCode
-│   └── Narrative
-│
-└── SupportingDocumentation/
-```
-
 # Conclusion
 
 This ePortfolio demonstrates my growth throughout the Computer Science program and highlights my ability to improve an existing software solution through software engineering, algorithmic enhancement, and database optimization. The completed project showcases both technical proficiency and professional communication skills while preparing me for a career in software development and database-focused computing environments.

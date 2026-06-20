@@ -56,7 +56,7 @@ The code review examines the original CS340 Animal Shelter Dashboard prior to en
 
 **Original Source Code**
 
-[Link to Original Artifact Folder]
+[Original Artifact]([url](https://github.com/adamjwhaley/ePortfolio/blob/main/Original%20Artifact))
 
 ---
 

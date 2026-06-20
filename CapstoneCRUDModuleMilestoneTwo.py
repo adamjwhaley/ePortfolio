@@ -1,0 +1,117 @@
+from pymongo import MongoClient
+
+
+class AnimalShelter(object):
+    """CRUD operations for Animal collection in MongoDB"""
+
+    def __init__(self, username, password):
+        """
+        Initialize connection to MongoDB using provided credentials.
+        """
+        HOST = "localhost"
+        PORT = 27017
+        DB = "aac"
+        COL = "animals"
+
+        try:
+            self.client = MongoClient(
+                f"mongodb://{username}:{password}@{HOST}:{PORT}/?authSource=aac"
+            )
+            self.database = self.client[DB]
+            self.collection = self.database[COL]
+
+        except Exception as e:
+            print(f"Connection failed: {e}")
+
+    # ----------------
+    # CREATE
+    # ----------------
+    def create(self, data):
+        """
+        Insert a document into the animals collection.
+
+        Parameters:
+            data (dict): Document to insert
+
+        Returns:
+            bool: True if successful, False otherwise
+        """
+        if data is None:
+            raise ValueError("Data parameter cannot be empty")
+
+        try:
+            result = self.collection.insert_one(data)
+            return result.acknowledged
+
+        except Exception as e:
+            print(f"Insert failed: {e}")
+            return False
+
+    # ----------------
+    # READ
+    # ----------------
+    def read(self, query=None):
+        """
+        Query documents from the animals collection.
+
+        Parameters:
+            query (dict): Query criteria
+
+        Returns:
+            list: Matching documents
+        """
+        if query is None:
+            query = {}
+
+        try:
+            cursor = self.collection.find(query)
+            return list(cursor)
+
+        except Exception as e:
+            print(f"Read operation failed: {e}")
+            return []
+
+    # ----------------
+    # UPDATE
+    # ----------------
+    def update(self, query, new_values):
+        """
+        Update documents in the collection.
+
+        Returns:
+            int: Number of modified documents
+        """
+        if not query:
+            raise ValueError("Query cannot be empty")
+
+        if not new_values:
+            raise ValueError("Update values cannot be empty")
+
+        try:
+            result = self.collection.update_many(query, new_values)
+            return result.modified_count
+
+        except Exception as e:
+            print(f"Update failed: {e}")
+            return 0
+
+    # ----------------
+    # DELETE
+    # ----------------
+    def delete(self, query):
+        """
+        Delete documents from the collection.
+
+        Returns:
+            int: Number of deleted documents
+        """
+        if not query:
+            raise ValueError("Delete query cannot be empty")
+
+        try:
+            result = self.collection.delete_many(query)
+            return result.deleted_count
+
+        except Exception as e:
+            print(f"Delete failed: {e}")
+            return 0

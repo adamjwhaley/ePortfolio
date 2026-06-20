@@ -127,8 +127,8 @@ The algorithms enhancement introduced a rescue suitability scoring algorithm and
 
 ### Artifacts
 
-* [Enhanced Source Code]
-* [Algorithms Narrative]
+* [Algorithms and Data Structures Enhancement](https://github.com/adamjwhaley/ePortfolio/blob/main/Algorithms%20and%20Data%20Structures%20Enhancement)
+* [Algorithms and Data Structures Narrative](https://github.com/adamjwhaley/ePortfolio/blob/main/Algorithms%20and%20Data%20Structures%20Narrative)
 
 ---
 
@@ -163,8 +163,9 @@ The database enhancement expanded the MongoDB integration by introducing advance
 
 ### Artifacts
 
-* [Enhanced Source Code]
-* [Database Narrative]
+* [Databases Main Enhancement](https://github.com/adamjwhaley/ePortfolio/blob/main/Databases%20Enhancement)
+* [Databases CRUD Module Enhancement](https://github.com/adamjwhaley/ePortfolio/blob/main/Databases%20CRUD%20Module%20Enhancement)
+* [Databases Narrative](https://github.com/adamjwhaley/ePortfolio/blob/main/Databases%20Narrative)
 
 ---
 

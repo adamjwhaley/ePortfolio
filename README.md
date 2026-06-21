@@ -29,7 +29,7 @@ These enhancements collectively demonstrate achievement of the Computer Science 
 The code review examines the original CS340 Animal Shelter Dashboard prior to enhancement. The review discusses existing functionality, identifies areas for improvement, and outlines the enhancement plan used throughout the capstone project.
 
 **Code Review Video:**
-[Insert YouTube or video link here]
+[Youtube Link](https://youtu.be/_HxTbJGdmaw)
 
 ---
 
